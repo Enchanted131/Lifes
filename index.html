@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>众生之门（练习</title>
+
+<!-- 要争取做到，网页交互且代码简洁，怎么训练ai
+ 要求，可以储存任何学习信息，当然最好是APP形式 -->
+ <style>
+   
+body{ 
+     background-image: url('./picture/pure-background.png'); 
+   position: static;
+    
+}
+/* animation-loading */
+.logo{
+position: relative;
+left: 580px;
+animation: logo 3s; 
+
+}
+@keyframes logo { 
+    0%{
+        transform: translate(0,-100px);
+    }
+
+}
+
+
+.word{
+ position: relative;
+left: 180px;
+top: 170px;
+  animation: word 3s;
+  
+}
+ @keyframes word{
+0%{
+    transform: translate(0,500px);
+}
+}
+/* 加个盒子在下面，做登陆的按钮，然后写程序绑定 */
+
+#loadinglogo{
+  position: relative;
+  right: 206px;
+  top: 302px;
+  transform: rotate(-0.15deg);
+  animation: loadinglogo 3s;
+  cursor: pointer;
+}
+@keyframes loadinglogo{
+  0%{
+    transform: translate(0,300px);
+  }
+}
+
+ </style>
+
+</head>
+<body>
+<!-- /* animation-loading */ -->
+ <img  class="logo" src="./picture/logo.png" alt="" width="400"  >
+ <img  class="word"   src="./picture/word.png" alt="" width="400">
+
+<a href="./登入注册.html"><img    id="loadinglogo"  src="./picture/loadinglogo.png" alt="" width="400"></a>
+ <!-- 按钮盒子，这里是在链接里面放图片，做效果用的 -->
+  <!-- 加一个click效果再去做绑定 -->
+<div  class-button></div>
+
+</body>
+</html>
